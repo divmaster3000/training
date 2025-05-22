@@ -1,10 +1,13 @@
 import { Stack } from "expo-router";
 
+import "@/global.css";
+import { GluestackUIProvider } from "@/components/ui/gluestack-ui-provider";
+
 const RootLayout = () => {
   return (
-    <Stack>
-      <Stack.Screen name="(protected)" options={{ headerShown: false }} />
-    </Stack>
+    <GluestackUIProvider mode="light"><Stack>
+        <Stack.Screen name="(protected)" options={{ headerShown: false }} />
+      </Stack></GluestackUIProvider>
   );
 };
 
