@@ -2,11 +2,11 @@ import { Redirect, Stack } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import "react-native-reanimated";
 
-const isLoggedIn = true;
+const isLoggedIn = false;
 
 export default function RootLayout() {
   if (!isLoggedIn) {
-    return <Redirect href="/login" />;
+    return <Redirect href="/(auth)/login" />;
   }
 
   return (
