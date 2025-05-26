@@ -1,10 +1,10 @@
-import { Text, View } from "react-native";
+import { SafeAreaView, Text } from "react-native";
 
 const RegistrationScreen = () => {
   return (
-    <View>
+    <SafeAreaView>
       <Text>Registration Screen</Text>
-    </View>
+    </SafeAreaView>
   );
 };
 
